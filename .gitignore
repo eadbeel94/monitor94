@@ -4,6 +4,11 @@ node_modules/
 src/frontend/css/b4
 src/frontend/css/fa
 src/frontend/font/
-src/frontend/img/
+src/frontend/img/area1.jpg
+src/frontend/img/area2.jpg
+src/frontend/img/area3.jpg
+src/frontend/img/favicon.ico
+src/frontend/img/logo1.png
+src/frontend/img/logo2.png
 src/backend/
 src/public/

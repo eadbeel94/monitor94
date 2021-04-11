@@ -6,6 +6,8 @@ This app can do:
 - Save history status and show into table
 - Graph machine behavior per each mounth
 
+![](/src/frontend/img/readme.png)
+
 Web page example link: [Monitor94](https://myportfolio-94.web.app/projects/monitor/)
 
 # Used Technologies
