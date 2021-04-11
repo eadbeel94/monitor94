@@ -1,0 +1,9 @@
+.vscode/
+extras/
+node_modules/
+src/frontend/css/b4
+src/frontend/css/fa
+src/frontend/font/
+src/frontend/img/
+src/backend/
+src/public/

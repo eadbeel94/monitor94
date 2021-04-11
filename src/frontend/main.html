@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--0.0.0.0 Head section-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Station Monitor</title>
+
+  <link rel="icon" href="/projects/monitor/img/favicon.ico">
+</head>
+<body>
+  <!--1.0.0.0 Body section-->
+  <section id="Gnral1" class="row mx-0">
+    <!--1.1.0.0 Left section-->
+    <div id="Short1" class="col-xl-2 col-12 px-0" style>
+      <!--1.1.A.0 Left title-->
+      <div class="mx-0 row">
+
+        <div class="col-12 py-2 text-center" style="font-family: oswald_1; font-size: 30px;">
+          <div class="card" style="font-size: 20px; width: 100%; background-color: transparent;">
+            NOMBRE DE SU EMPRESA
+          </div>
+        </div>
+        <div class="col-12 py-2 text-center" style="font-family: oswald_1; font-size: 30px;">
+          <div class="card" style="font-size: 30px; width: 100%; background-color: transparent;">
+            LOGO DE SU EMPRESA
+          </div>
+        </div>
+
+      </div>
+      <!--1.1.B.0 Left group buttons-->
+      <ul class="pb-2 list-group pt-4">
+
+        <li class="p-0 list-group-item border-0" style="background-color: transparent;">
+          <div class="mx-0 row">
+            <div id="List01" class="px-1 col-6 col-lg-12">         
+              <button id="Btns00" type="button" class="w-100 text-left btn active btn-outline-dark border border-dark">                                   
+                <div class="fas fa-layer-group" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> AREA 1</span>
+              </button>
+              <button id="Btns01" type="button" class="w-100 text-left btn btn-outline-dark border border-dark">                                   
+                <div class="fas fa-layer-group" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> AREA 2</span>
+              </button>
+              <button id="Btns02" type="button" class="w-100 text-left btn btn-outline-dark border border-dark">                                   
+                <div class="fas fa-layer-group" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> AREA 3</span>
+              </button>
+              <button id="Btns03" type="button" class="w-100 text-left btn btn-outline-dark border border-dark">                                   
+                <div class="fas fa-clipboard-list" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> HISTORIAL</span>
+              </button>
+              <button id="Btns04" type="button" class="w-100 text-left btn btn-outline-dark border border-dark">                                   
+                <div class="far fa-chart-bar" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> GRAFICAS</span>
+              </button>
+              <button id="Btns05" type="button" class="w-100 text-left btn btn-outline-dark border border-dark">                                   
+                <div class="fas fa-table" style="font-size: 20px; "></div>
+                <span class="px-1 cssbtns"> ACERCA DE...</span>
+              </button>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <!--1.1.C.0 Left caption-->
+      <section class="col-12 px-1 py-2">
+        <div id="Stats0" class="card" style="font-family: Oswald_1;">
+
+          <div class="mx-auto py-1">
+            LEYENDA
+          </div>
+
+          <label class="text-center pt-2">
+            <i id="Camer1" class="fas fa-desktop px-1 csscam1" style="font-size: 22px;"> - </i>
+            <span style="font-family: oswald_1; font-size: 18px;"> Estacion activa</span>                     
+          </label>
+          <label class="text-center pt-2">
+            <i id="Camer2" class="fas fa-desktop px-1 csscam2" style="font-size: 22px;"> - </i>
+            <span style="font-family: oswald_1; font-size: 18px;"> Estacion inactiva</span>                     
+          </label>
+
+        </div>
+      </section>
+      <!--1.1.D.0 Left link DB caption-->
+      <section class="col-12 px-1 py-2">
+        <div id="Stats1" class="card">
+
+          <div class="mx-auto py-1" style="background-color: transparent; font-family: Oswald_1;">
+            ESTATUS DE SERVIDORES
+          </div>
+
+          <label class="text-left pt-2">
+
+            <span class="pl-2" style="font-family: oswald_1; font-size: 18px;">Server status:</span> 
+            <i id="Kepsv1" class="fas fa-server px-1" style="font-size: 22px;"></i>
+            <span id="Kepsv2" style="font-family: oswald_1; font-size: 18px;"> Stop</span>                     
+
+          </label>
+
+          <label class="text-left pt-2">
+
+            <span class="pl-2" style="font-family: oswald_1; font-size: 18px;">Database status:</span> 
+            <i id="Datab1" class="fas fa-database px-1" style="font-size: 22px;"></i>
+            <span id="Datab2" style="font-family: oswald_1; font-size: 18px;"> Stop</span>                     
+
+          </label>
+
+        </div>
+      </section>
+
+    </div>
+    <!--1.2.0.0 First section-->
+    <div id="Contn1" class="col-xl-10 col-12 px-0">
+      <section class="row mx-0">
+        <!--1.2.A.0 little title-->
+        <div id="Title2" class="col-12" style="display: none;">
+          <div class="card border-0 text-center justify-content-around cssti2">
+            Titulo del proyecto
+          </div>
+        </div>
+        <!--1.2.B.0 Message warning area-->
+        <div id="Upper2" class="col-12">
+          <section class="row mx-0 align-items-center cssup2">
+            <!--1.2.B.1 Section indicator message-->
+            <div id="Title1" class="col-2">
+              Area 1
+            </div>
+            <!--1.2.B.2 Section message warning-->
+            <div id="Msggs1" class="col-6" style="font-family: Titillium_1; overflow: hidden;">
+              Area 1
+            </div>
+            <div id="Btns11" class="col-4 text-right" style="font-family: Titillium_1;">
+            <!--1.2.B.3 Button toggle theme dark/light-->
+              <div id="Color2" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label id="OptnsA" class="btn btn-secondary active">
+                  <input type="radio" name="options1" autocomplete="off" checked> Normal
+                </label>
+                <label id="OptnsB" class="btn btn-secondary">
+                  <input type="radio" name="options1" autocomplete="off"> Oscuro
+                </label>
+              </div>
+            <!--1.2.B.4 Button toggle layout/table-->
+              <div id="Color3" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label id="OptnsC" class="btn btn-secondary active">
+                  <input type="radio" name="options2" autocomplete="off" > Todo
+                </label>
+                <label id="OptnsD" class="btn btn-secondary">
+                  <input type="radio" name="options2" autocomplete="off"> Tablas
+                </label>
+              </div>
+
+            </div>
+          </section>
+        </div>
+        <!--1.2.C.0 Big counters area-->
+        <div id="Mddle2" class="col-12 px-0">       
+          <section class="row mx-0">
+            <!--1.2.C.1 Users count-->
+            <div class="col px-0">
+              <div class="text-center pt-2" style="height: 100px;">
+                <i class="fas fa-user" style="font-size: 20px;"></i>
+                <span class="cssmd2"> Usuarios</span>                     
+                <div class="cssmd3">2</div>
+              </div>
+            </div>
+            <!--1.2.C.2 Operations count-->
+            <div class="col px-0">
+              <div class="text-center pt-2" style="height: 100px;">
+                <i class="fas fa-train" style="font-size: 20px;"></i>
+                <span class="cssmd2"> Estaciones</span>                     
+                <div class="cssmd3" id="Machi1">10</div>
+              </div>
+            </div>
+            <!--1.2.C.3 Bypass active count-->
+            <div class="col px-0">
+              <div class="text-center pt-2" style="height: 100px;">
+                <i class="fas fa-low-vision" style="font-size: 20px;"></i>
+                <span class="cssmd2"> Estaciones inactivas</span>                     
+                <div class="cssmd3" id="Wtbyp1">0</div>
+              </div>
+            </div>
+            <!--1.2.C.4 Bypass inactive count-->
+            <div class="col px-0">
+              <div class="text-center pt-2" style="height: 100px;">
+                <i class="fas fa-laugh-beam" style="font-size: 20px;"></i>
+                <span class="cssmd2"> Estaciones activas</span>                     
+                <div class="cssmd3" id="Wobyp1">10</div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+        <!--1.2.D.0 All big layout area-->
+        <div id="Body02" class="col-12 px-0 cssbdy2 cssscrlw">      
+          <section class="row mx-0">
+            <!--1.2.D.1 Layout Area 1-->
+            <div class="col-12 p-3">
+              <div id="Scrol0" class="card shadow-lg cssscrl cssscrlw">
+                <div class="position-absolute text-center csssqr0 w-25">
+                  <label id="Subtt0" class="card subt0 mb-0">Area 1</label> 
+                </div>
+                <div id="Loop00" class="cssloop0 d-flex justify-content-center">
+                  <!--<section style="width: 60px; height: 50px;" class="card text-center">
+                    <i style="font-size: 24px;" class="fas fa-seedling"></i>
+                    <div style="font-family: orbitron_1; font-size: 16px;">OP10</div>
+                  </section>-->
+                </div>
+              </div>  
+            </div>
+            <!--1.2.D.2 Layout Area 2-->
+            <div class="col-12 p-3">
+              <div id="Scrol1" class="card shadow-lg cssscrl cssscrlw">
+                <div  class="position-absolute text-center csssqr1 w-25">
+                  <label id="Subtt1" class="card subt1 mb-0">Area 2</label>         
+                </div>
+                <div id="Loop01" class="cssloop1 d-flex justify-content-center"></div>
+              </div>  
+            </div>
+            <!--1.2.D.3 Layout Area 3-->
+            <div class="col-12 p-3">
+              <div id="Scrol2" class="card shadow-lg cssscrl cssscrlw">
+                <div class="position-absolute text-center csssqr2 w-25">
+                  <label id="Subtt2" class="card subt2 mb-0">Area 3</label> 
+                </div>
+                <div id="Loop02" class="cssloop2 d-flex justify-content-center"></div>                      
+              </div>  
+            </div>
+            <!--1.2.D.4 First table bypass active history-->
+            <div class="col-6 p-2 pl-3">
+              <div id="Scrol3" class="card border-0 shadow-lg cssscrlw" style="height: 350px; overflow: auto;">
+                <div class="mx-auto py-1" style="background-color: transparent; font-family: Oswald_1;">
+                  HISTORIAL DE ESTACIONES ACTIVAS
+                </div>
+                <table id="Histl1" class="table mb-0">
+                  <thead>
+                    <tr><th scope="col">#</th><th scope="col">Fecha</th><th scope="col">Descripcion</th></tr>
+                  </thead>
+                  <tbody id="TBody1"></tbody>
+                </table>
+              </div>
+            </div>
+            <!--1.2.D.5 Second table bypass inactive history-->
+            <div class="col-6 p-2 pr-3">
+              <div id="Scrol4" class="card border-0 shadow-lg cssscrlw" style="height: 350px; overflow: auto;"> 
+                <div class="mx-auto py-1" style="background-color: transparent; font-family: Oswald_1;">
+                  HISTORIAL DE ESTACIONES INACTIVAS
+                </div>
+                <table id="Histl2" class="table mb-0">
+                  <thead>
+                    <tr><th scope="col">#</th><th scope="col">Fecha</th><th scope="col">Descripcion</th></tr>
+                  </thead>
+                  <tbody id="TBody2"></tbody>
+                </table>
+              </div>
+            </div>
+            <!--1.2.D.6 Graph area-->
+            <div class="col-12 p-2 pl-3">
+              <div id="Graph1" class="card border-0 shadow-lg cssscrlw" style="height: 350px; overflow: hidden;"></div>
+            </div>
+            <!--1.2.D.7 About 1 area-->
+            <div class="col-8 p-2 pl-3" >
+              <div id="About1" class="card border-0 shadow-lg">
+                <div class="row align-items-center" style="height: 400px;">
+                  <div class="col p-4 cssabt1">
+                    <div>
+                      El sistema de monitoreo pretende mostrar de manera gráfica, rápida y eficaz las estaciones
+                      que se encuentran activas/inactivas, para que así el equipo de mantenimiento pueda realizar 
+                      alguna corrección una vez sea identificado el problema
+                      y poder trabajar con todos los sistemas sin ningún tipo de error, de esta
+                      manera aseguramos la calidad del producto que ensamblamos/creamos.
+                      Recordemos la misión de 
+                      <span style="color: rgb(70,130,190);">"Nombre de la empresa"&copy; </span> 
+                    </div> 
+                    <div class="cssabt2">
+                      "Frase importante para la empresa"
+                    </div>               
+                    <div class="py-2">
+                      <div class="card" style="font-size: 30px; font-family: oswald_1; background-color: transparent;">
+                        LOGO DE SU EMPRESA
+                      </div>
+                    </div> 
+                    <div class="pt-3 cssurl1">
+                      Para mas informacion visita <a href="#">sitio de su empresa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--1.2.D.8 About 2 area-->
+            <div class="col-4 p-2 pr-3" >
+              <div id="About2" class="card border-0 shadow-lg">
+                <div class="row align-items-center" style="height: 400px;">
+                  <div id="mes1" class="col p-4 cssabt1">
+                    <div>
+                      La aplicación fue diseñada y creada por el desarrollador
+                    </div> 
+                    <div>
+                      full-stack ing. Adbeel Estrada Martinez
+                    </div>
+                    <div class="mx-auto py-2">
+                      <img src="/projects/monitor/img/logo1.png" alt="" height="80px">
+                    </div>            
+                    <div class="cssurl1">
+                      Para mas informacion del desarrollador visita: <a href="https://eadbeel94.web.app" target="_blank"> eadbeel94.web.app </a>
+                    </div>
+                    <div class="cssurl1">
+                      View documentation: <a href="/projects/monitor/doc/" target="_blank">documentation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--1.2.D.9 it just empty space-->
+            <div id="Empty1" class="col-12">
+              <div class="card border-0" style="height: 700px; background-color: transparent;"></div>
+            </div>
+
+          </section>
+        </div>
+        <!--1.2.E.0 Tables group area-->
+        <div id="Table2" class="col-12 pt-3" style="display: none; height: 800px; overflow: hidden scroll;">
+          <section class="row mx-0">
+            <!--1.2.E.1 Table Area 1-->
+            <div class="col-lg-4 col-md-6 col-12 py-4">
+              <div class="card shadow-lg">
+                <div id="Tabtl0" class="py-1" style="text-align: center; font-family: aubrey_1; font-size: 22px;">Area 1</div>
+                <table id="Tabbl0" class="table mb-0">
+                  <thead>
+                      <tr style="text-align: center; font-family: Orbitron_1; font-weight: bold">
+                      <th scope="col" style="font-size: 18px; ">#</th>
+                      <th scope="col" style="font-size: 18px; ">Operacion</th>
+                      <th scope="col" style="font-size: 18px; ">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="Tbodl0" style="text-align: center; font-family: Orbitron_1; font-size: 16px;">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--1.2.E.2 Table Area 2-->
+            <div class="col-lg-4 col-md-6 col-12 py-4">
+              <div class="card shadow-lg">
+                <div id="Tabtl1" class="py-1" style="text-align: center; font-family: aubrey_1; font-size: 22px;">Area 2</div>
+                <table id="Tabbl1" class="table mb-0">
+                  <thead>
+                      <tr style="text-align: center; font-family: Orbitron_1; font-weight: bold">
+                      <th scope="col" style="font-size: 18px; ">#</th>
+                      <th scope="col" style="font-size: 18px; ">Operacion</th>
+                      <th scope="col" style="font-size: 18px; ">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="Tbodl1" style="text-align: center; font-family: Orbitron_1; font-size: 16px;">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--1.2.E.3 Table Area 3-->
+            <div class="col-lg-4 col-md-6 col-12 py-4">
+              <div class="card shadow-lg">
+                <div id="Tabtl2" class="py-1" style="text-align: center; font-family: aubrey_1; font-size: 22px;">Area 3</div>
+                <table id="Tabbl2" class="table mb-0">
+                  <thead>
+                      <tr style="text-align: center; font-family: Orbitron_1; font-weight: bold">
+                      <th scope="col" style="font-size: 18px; ">#</th>
+                      <th scope="col" style="font-size: 18px; ">Operacion</th>
+                      <th scope="col" style="font-size: 18px; ">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="Tbodl2" style="text-align: center; font-family: Orbitron_1; font-size: 16px;">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </section>
+        </div>
+        
+      </section>
+    </div>
+
+  </section>
+  <!--2.0.0.0 Footer section-->
+  <section id="Footr1" class="col-lg-12 px-0">
+    <div class="row mx-0">
+      <div class="col-12 pt-2 px-0">
+        <div class="card bg-transparent border-0 rounded-0" style="font-family: aubrey_1; font-size: 18px;">
+          <div class="card-footer text-muted py-0 border-0 " style="text-align: center;">
+              Station Monitor V2.1.0
+              <i class="fas fa-crosshairs"></i>
+              Designed by EADBEEL 2020 
+              <i class="fab fa-creative-commons-nc"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

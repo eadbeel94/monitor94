@@ -1,0 +1,317 @@
+/*------------------------------------ FONTS ------------------------------------*/
+  @font-face {
+    font-family: 'aubrey_1'; src: url('../font/Aubrey-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'orbitron_1'; src: url('../font/Orbitron-Regular.ttf'); font-weight: bold;
+  }
+  @font-face {
+    font-family: 'oswald_1'; src: url('../font/Oswald-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'titillium_1'; src: url('../font/TitilliumWeb-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'titillium_2'; src: url('../font/TitilliumWeb-Bold.ttf');
+  }
+/* -------------------- Load css white scrollbar customize styles -------------------- */
+.cssscrlw::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.cssscrlw::-webkit-scrollbar-track {
+  background: rgb(223,223,223);
+}
+.cssscrlw::-webkit-scrollbar-thumb {
+  background: rgb(170,170,170);
+}
+.cssscrlw::-webkit-scrollbar-thumb:hover {
+  background: rgb(52,62,64);
+}
+
+/* Load css dark scrollbar customize styles*/
+.cssscrld::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.cssscrld::-webkit-scrollbar-track {
+  background: rgb(100,150,170);
+}
+.cssscrld::-webkit-scrollbar-thumb {
+  background: rgb(40,60,80);
+}
+.cssscrld::-webkit-scrollbar-thumb:hover {
+  background: rgb(20,190,150);
+}
+
+/* -------------------- Load css initial styles -------------------- */  
+.csstitle {
+  font-size: 15px; 
+  width: 150px;
+}
+.cssbtns {
+  font-family: orbitron_1; 
+  font-size: 13px;
+}
+.cssti2 {
+  font-family: titillium_1; 
+  background-color: transparent;
+}
+.cssup2{
+  height: 50px; 
+  font-family: titillium_1; 
+  font-size: 20px;
+}
+.cssmd2{
+  font-family: oswald_1; 
+  font-size: 20px;
+}
+.cssmd3{
+  border-right: 1px solid rgba(150,150,150,0.9) ;
+  font-family: Oswald_1; 
+  font-size: 40px;
+}
+.cssbdy2{
+  height: 800px; 
+  overflow: hidden scroll;
+  /*background-image: url('./Images/logo2.png'); */
+  background-size: 150px; 
+}
+.cssscrl{
+  overflow-x: auto; 
+  border-style: solid;
+  border-width: 3px;
+}
+.csssqr0{
+  font-family: oswald_1; font-size: 40px;right: 10px;bottom: 10px;
+}
+.csssqr1{
+  font-family: oswald_1; font-size: 40px; right: 10px; bottom: 10px;
+}
+.csssqr2{
+  font-family: oswald_1; font-size: 40px;right: 10px;bottom: 10px;
+}
+.subt0{
+  background-color: rgb(245, 245, 245);
+}
+.subt1{
+  background-color: rgb(245, 245, 245);
+}
+.subt2{
+  background-color: rgb(245, 245, 245);
+}
+.cssloop0{
+  background-image: url('../img/area1.jpg'); background-repeat: no-repeat;  height: 500px; background-size: 500px; background-position-x: center; background-color: rgb(61,141,168);
+}
+.cssloop1{
+  background-image: url('../img/area2.jpg'); background-repeat: no-repeat;  height: 500px; background-size: 500px; background-position-x: center; background-color: rgb(204,230,255);
+}
+.cssloop2{
+  background-image: url('../img/area3.jpg'); background-repeat: no-repeat;  height: 500px; background-size: 500px; background-position-x: center; background-color: rgb(122,202,213);
+}
+.cssabt1{
+  font-family: titillium_1; 
+  font-size: 18px; 
+  text-align: center;
+}
+.cssabt2{
+  font-family: titillium_2; 
+  font-size: 18px; 
+  text-align: center;
+}
+.cssurl1{
+  font-family: titillium_1; 
+  font-size: 12px; 
+  text-align: right;
+}
+.csscam1{
+  color: green;
+}
+.csscam2{
+  color: rgb(200,0,0);
+}
+
+/* -------------------- Load css white styles -------------------- */
+.csslight #Short1{
+  color: black;
+  background-color: white;
+}
+.csslight #Upper2{
+  color: black;
+  background-color: white;
+}
+.csslight #Title2{
+  color: black;
+  background-color: white;
+}
+.csslight #Mddle2{
+  color: black;
+  background-color: white;
+}
+.csslight #Table2{
+  color: black;
+  background-color: white;
+}
+.csslight #Body02{
+  background-color: white;
+  /*background-image: url('./Images/logo2.png'); */
+}
+.csslight #Footr1{
+  background-color: white;
+}
+.csslight #About1{
+  color: black;
+  background-color: white;
+}
+.csslight #About2{
+  color: black;
+  background-color: white;
+}
+.csslight #Tabtl0{
+  color: black;
+  background-color: white;
+}
+.csslight #Tabtl1{
+  color: black;
+  background-color: white;
+}
+.csslight #Tabtl2{
+  color: black;
+  background-color: white;
+}
+.csslight #Stats1{
+  background-color: white;
+}
+.csslight #Subtt0{
+  color: black;
+  background-color: rgb(245,245,245,0.8);
+}
+.csslight #Subtt1{
+  color: black;
+  background-color: rgb(245,245,245,0.8);
+}
+.csslight #Subtt2{
+  color: black;
+  background-color: rgb(245,245,245,0.8);
+}
+.csslight #Scrol3{
+  color: black;
+  background-color: white;
+}
+.csslight #Scrol4{
+  color: black;
+  background-color: white;
+}
+.csslight #Stats0{
+  color: black;
+  background-color: white;
+}
+.csslight #Camer1{
+  color: green;
+}
+.csslight #Camer2{
+  color: rgb(200,0,0);
+}
+.csslight #Graph1{
+  background-color: white;
+}
+.csslight #TBody1{
+  color: black;
+}
+.csslight #TBody2{
+  color: black;
+}
+
+
+/* -------------------- Load css dark styles -------------------- */
+.cssdark #Short1{
+  color: white;
+  background-color: rgb(40,60,80);
+}
+.cssdark #Upper2{
+  color: white;
+  background-color: rgb(40,60,80);
+}
+.cssdark #Title2{
+  color: white;
+  background-color: rgb(40,60,80);
+}
+.cssdark #Mddle2{
+  color: white;
+  background-color: rgb(40,60,80);
+}
+.cssdark #Table2{
+  color: white;
+  background-color: rgb(40,60,80);
+}
+.cssdark #Body02{
+  background-color: rgb(40,60,80);
+  /*background-image: url('./Images/logo2.png'); */
+}
+.cssdark #Footr1{
+  background-color: rgb(40,60,80);
+}
+.cssdark #About1{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #About2{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Tabtl0{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Tabtl1{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Tabtl2{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Stats1{
+  background-color: rgb(60,80,100);
+}
+.cssdark #Subtt0{
+  color: white;
+  background-color: rgba(40,60,80,0.9);
+}
+.cssdark #Subtt1{
+  color: white;
+  background-color: rgba(40,60,80,0.9);
+}
+.cssdark #Subtt2{
+  color: white;
+  background-color: rgba(40,60,80,0.9);
+}
+.cssdark #Scrol3{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Scrol4{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Stats0{
+  color: white;
+  background-color: rgb(60,80,100);
+}
+.cssdark #Camer1{
+  color: rgb(0,255,0);
+}
+.cssdark #Camer2{
+  color: rgb(255,50,50);
+}
+
+.cssdark #Graph1{
+  background-color: rgb(60,80,100);
+}
+.cssdark #TBody1{
+  color: white;
+}
+.cssdark #TBody2{
+  color: white;
+}
+

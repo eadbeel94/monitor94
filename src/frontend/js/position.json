@@ -1,0 +1,31 @@
+{
+  "loop0":[
+    {"id": "S00", "name": "OP010",   "x": -160,   "y": 55,   "show": "visible",  "icon": "fas fa-seedling"},
+    {"id": "S01", "name": "OP020",   "x": -380,   "y": 50,   "show": "visible",  "icon": "fas fa-seedling"},
+    {"id": "S02", "name": "OP035",   "x": -165,   "y": 230,  "show": "visible",  "icon": "fas fa-seedling"},
+    {"id": "S03", "name": "OP055",   "x": 0,      "y": 0,    "show": "hidden",   "icon": "fas fa-seedling"},
+    {"id": "S04", "name": "OP070",   "x": -80,    "y": 350,  "show": "visible",  "icon": "fas fa-seedling"},
+    {"id": "S05", "name": "OP11A",   "x": 360,    "y": 400,  "show": "visible",  "icon": "fas fa-seedling"},
+    {"id": "S06", "name": "OP15D",   "x": 0,      "y": 0,    "show": "hidden",   "icon": "fas fa-seedling"}
+  ],  
+  "loop1":[ 
+    {"id": "S10", "name": "OP110",   "x": -280,   "y": 10,   "show": "visible",  "icon": "fas fa-box"},
+    {"id": "S11", "name": "OP130",   "x": -330,   "y": 130,   "show": "visible",  "icon": "fas fa-box"},
+    {"id": "S12", "name": "OP145",   "x": 0,   "y": 0,  "show": "hidden",  "icon": "fas fa-box"},
+    {"id": "S13", "name": "OP15A",   "x": 0,      "y": 0,    "show": "hidden",   "icon": "fas fa-box"},
+    {"id": "S14", "name": "OP16C",   "x": -50,    "y": 230,  "show": "visible",  "icon": "fas fa-box"},
+    {"id": "S15", "name": "OP180",   "x": -100,    "y": 70,  "show": "visible",  "icon": "fas fa-box"},
+    {"id": "S16", "name": "OP185",   "x": 0,      "y": 0,    "show": "hidden",   "icon": "fas fa-box"},
+    {"id": "S17", "name": "OP19A",   "x": 200,      "y": 405,    "show": "visible",   "icon": "fas fa-box"},
+    {"id": "S18", "name": "OP199",   "x": 505,      "y": 200,    "show": "visible",   "icon": "fas fa-box"}
+  ],  
+  "loop2":[ 
+    {"id": "S20", "name": "OP211",   "x": -105,   "y": 40,   "show": "visible",  "icon": "fas fa-industry"},
+    {"id": "S21", "name": "OP222",   "x": -380,   "y": 50,   "show": "visible",  "icon": "fas fa-industry"},
+    {"id": "S22", "name": "OP23C",   "x": -25,   "y": 230,  "show": "visible",  "icon": "fas fa-industry"},
+    {"id": "S23", "name": "OP23D",   "x": 0,      "y": 0,    "show": "hidden",   "icon": "fas fa-industry"},
+    {"id": "S24", "name": "OP23F",   "x": 300,    "y": 360,  "show": "visible",  "icon": "fas fa-industry"},
+    {"id": "S25", "name": "OP270",   "x": 30,    "y": 210,  "show": "visible",  "icon": "fas fa-industry"},
+    {"id": "S26", "name": "OP288",   "x": 110,      "y": 355,    "show": "visible",   "icon": "fas fa-industry"}
+  ]
+}

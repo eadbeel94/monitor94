@@ -1,0 +1,39 @@
+{
+  "name": "A2-MONITOR_ST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "build2": "cross-env NODE_ENV=production webpack -p",
+    "build3": "cross-env NODE_ENV=development webpack -d",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "delay": "^4.4.0",
+    "plotly.js": "^1.58.4",
+    "plotly.js-basic-dist": "^1.58.4"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap.native": "^3.0.14",
+    "css-loader": "^5.0.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "docdash": "^1.2.0",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "jsdoc": "^3.6.6",
+    "jsdoc-http-plugin": "^0.3.2",
+    "mini-css-extract-plugin": "^1.3.3",
+    "nodemon": "^2.0.6",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
