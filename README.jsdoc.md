@@ -1,4 +1,5 @@
 # Station Monitor 94
+<!-- DOCUMENTATION JSDOC -->
 is a simple project that use vanilla JS without framework.
 
 This app can do:
@@ -14,10 +15,6 @@ This app can do:
 
 - Frontend (helper)
   - [service](/projects/monitor/doc/Frontend_service.html)
-
-<!--
-Web page example link: [inventory94](https://inventory94.herokuapp.com/)
--->
 
 # Used Technologies
 - Frontend

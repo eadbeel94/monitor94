@@ -158,6 +158,8 @@ const $Tbodl1= document.getElementById('Tbodl1');
  **/ 
 const $Tbodl2= document.getElementById('Tbodl2');
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Show and hide HTML elements
  * @function showAndhide
@@ -204,6 +206,8 @@ const showAndhide= ( width=0 ) =>{
   return null;
 };
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Change title text and toogle button into left side bar
  * @function areaSelected
@@ -236,6 +240,8 @@ const areaSelected= ( selected , position )=>{
   return null;
 };
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Create HTML table with random date and station
  * @function fillHistory
@@ -256,64 +262,27 @@ const fillHistory= ( space=5 , active=false ) =>{
   }).join('');
 };
 
-//------------------------------ init param for page ------------------------------//
-
-$Body02.style.height = ((window.innerHeight)-185) + "px";     //change client height
-$Table2.style.height = ((window.innerHeight)-110) + "px";
-
-$loop00.innerHTML= genStations( loop0 );      //Create layout with all station status
-$loop01.innerHTML= genStations( loop1 );
-$loop02.innerHTML= genStations( loop2 );
-
-$Tbodl0.innerHTML= genTables( loop0 );        //Create table with all station status
-$Tbodl1.innerHTML= genTables( loop1 );
-$Tbodl2.innerHTML= genTables( loop2 );
-
-showAndhide( window.innerWidth );             //Show HTML elements based on client width
-
-/** 
- * create three object with plotly configuration values 
- * @type {Array<any>} 
- * @memberof Frontend/main
- **/ 
-let graphMain= genGraph( ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"], genRandoms( 12 , 24 ) );
-Plotly.newPlot( $Graph1, graphMain[0] , graphMain[1] , graphMain[2] );    //Create a plotly graph with complement value
-
-$TBody1.innerHTML= fillHistory( 10 , true );    //Fill tables histories
-$TBody2.innerHTML= fillHistory( 10 , false );
-
-//------------------------------ Event listeners ------------------------------//
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /**
  * Change position layout based on button left side bar pressed
- * @callback $btns-click
+ * @function watchLeftBar
  * @memberof Frontend/main
  */
-$btns.forEach( ( el, i )=> el.addEventListener( 'click' , () => areaSelected( i, undefined) ) );
+const watchLeftBar= ()=>{
+  $btns.forEach( ( el, i )=> el.addEventListener( 'click' , () => areaSelected( i, undefined) ) );
+  $Body02.addEventListener("scroll", ev => areaSelected( undefined, ev.target.scrollTop ) );
+};
 
-/**
- * Change button toogle pressed based on scrol position
- * @callback $Body02-scroll
- * @memberof Frontend/main
- */
-$Body02.addEventListener("scroll", ev => areaSelected( undefined, ev.target.scrollTop ) );
-
-/**
- * Show and hide HTML objects based on client width and resize plotly graph
- * @callback window-resize
- * @memberof Frontend/main
- */
-window.addEventListener('resize', () => {
-  showAndhide( window.innerWidth )
-  Plotly.relayout( $Graph1, { height: $Graph1.clientHeight, width: $Graph1.clientWidth });
-});
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /**
  * if client pressed any button into first button group, then change color theme 
- * @callback $Color2-click
+ * @function watchBtnsColor
+ * @param {Event} ev Click mouse event button pressed
  * @memberof Frontend/main
  */
-$Color2.addEventListener('click', ev =>{
+const watchBtnsColor= (ev)=>{
 
   if( ev.target.id ){
     $Color2.querySelectorAll('.btn').forEach( el =>el.classList.remove('active') );
@@ -348,31 +317,92 @@ $Color2.addEventListener('click', ev =>{
 
   };
 
-});
+};
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /**
  * if client pressed any button into second button group, then show and hide layout or table view
- * @callback $Color3-click
+ * @function watchBtnsView
+ * @param {Event} ev Click mouse event button pressed
  * @memberof Frontend/main
  */
-$Color3.addEventListener('click', ev=>{
+const watchBtnsView= (ev)=>{
   if( ev.target.id == "OptnsC" ){ showAndhide( 1201 ) };
   if( ev.target.id == "OptnsD" ){ showAndhide( -1 ) };
-});
+};
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/**
+ * for each second lapsed, then toogle status station ( green or red color ) randomly
+ * @function genRndmAlertSt
+ * @param {Number} time Lapsed time for random function
+ * @memberof Frontend/main
+ */
+ const genRndmAlertSt= ( time= 1000 )=>{
 /** 
  * HTML icons group 
  * @type {NodeListOf<Element>} 
  * @memberof Frontend/main
  **/  
-const icons= $Body02.querySelectorAll('i');
+ const icons= $Body02.querySelectorAll('i');
+ setInterval(() => {
+   icons.forEach( el=> el.classList.remove('text-danger') );
+   genRandoms( 5 , icons.length ).forEach( el=> icons[el].classList.add('text-danger') );
+ }, time);
+};
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /**
- * for each second lapsed, then toogle status station ( green or red color ) randomly
- * @callback setInterval-1second
+ * Show and hide HTML objects based on client width and resize plotly graph
+ * @function modSizeElements
  * @memberof Frontend/main
  */
-setInterval(() => {
-  icons.forEach( el=> el.classList.remove('text-danger') );
-  genRandoms( 5 , icons.length ).forEach( el=> icons[el].classList.add('text-danger') );
-}, 1000);
+ const modSizeElements= ()=>{
+  showAndhide( window.innerWidth )
+  Plotly.relayout( $Graph1, { height: $Graph1.clientHeight, width: $Graph1.clientWidth });
+};
+
+window.onresize= modSizeElements;
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/**
+ * Execute code when page load end
+ * @function main
+ * @memberof Frontend/main
+ */
+const main= ()=>{
+  $Body02.style.height = ((window.innerHeight)-185) + "px";     //change client height
+  $Table2.style.height = ((window.innerHeight)-110) + "px";
+  
+  $loop00.innerHTML= genStations( loop0 );      //Create layout with all station status
+  $loop01.innerHTML= genStations( loop1 );
+  $loop02.innerHTML= genStations( loop2 );
+  
+  $Tbodl0.innerHTML= genTables( loop0 );        //Create table with all station status
+  $Tbodl1.innerHTML= genTables( loop1 );
+  $Tbodl2.innerHTML= genTables( loop2 );
+  
+  showAndhide( window.innerWidth );             //Show HTML elements based on client width
+  
+  /** 
+   * create three object with plotly configuration values 
+   * @type {Array<any>} 
+   * @memberof Frontend/main
+   **/ 
+  let graphMain= genGraph( ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"], genRandoms( 12 , 24 ) );
+  Plotly.newPlot( $Graph1, graphMain[0] , graphMain[1] , graphMain[2] );    //Create a plotly graph with complement value
+  
+  $TBody1.innerHTML= fillHistory( 10 , true );    //Fill tables histories
+  $TBody2.innerHTML= fillHistory( 10 , false );
+  
+  watchLeftBar();
+  $Color2.onclick= (ev) => watchBtnsColor(ev);
+  $Color3.onclick= (ev) => watchBtnsView(ev);
+  genRndmAlertSt( 950 );
+};
+
+window.onload= main;

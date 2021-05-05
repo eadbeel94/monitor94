@@ -1,4 +1,5 @@
 # Station Monitor 94
+<!-- GITHUB -->
 is a simple project that use vanilla JS without framework.
 
 This app can do:
@@ -8,7 +9,7 @@ This app can do:
 
 ![](/src/frontend/img/readme.png)
 
-Web page example link: [Monitor94](https://myportfolio-94.web.app/projects/monitor/)
+Web page example link: [Monitor 94](https://myportfolio-94.web.app/projects/monitor/)
 
 # Used Technologies
 - Frontend

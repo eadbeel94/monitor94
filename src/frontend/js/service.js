@@ -1,5 +1,7 @@
 /** @namespace Frontend/service */
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Create a Html square that include a icon and name station
  * @function genStations
@@ -17,6 +19,8 @@ const genStations= ( loop=[] ) => {
   }).join('');
 };
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Create a Html table that include a icon and name station
  * @function genTables
@@ -33,6 +37,8 @@ const genTables= ( loop=[] ) => {
   }).join('');
 };
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /**
  * Create an Array with random values
  * @function genRandoms
@@ -46,6 +52,8 @@ const genRandoms= ( space , max ) =>{
   for (let i = 0; i < space; i++){ vals.push( Math.floor( Math.random() * max ) ) };
   return vals;
 };
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /**
  * Create complementary arrays that it will use for plotly graph
@@ -99,5 +107,7 @@ const genGraph= ( valx=[], valy=[], black=false ) =>{
 
   return config;
 };
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 module.exports= { genStations , genTables , genRandoms , genGraph };
